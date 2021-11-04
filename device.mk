@@ -417,6 +417,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance \
+    QXPerformance
+
 # Touchscreen
 PRODUCT_PACKAGES += \
     libtinyxml2
