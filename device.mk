@@ -332,6 +332,7 @@ PRODUCT_PACKAGES += \
 
 # QTI common
 -include vendor/qcom/common/perf/perf-vendor.mk
+-include vendor/qcom/common/telephony/telephony-vendor.mk
 
 # Protobuf
 PRODUCT_PACKAGES += \
