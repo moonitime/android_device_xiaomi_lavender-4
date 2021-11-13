@@ -314,7 +314,11 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
+    power.qcom
+
+PRODUCT_PACKAGES += \
+    android.hardware.power-impl \
+    android.hardware.power-service \
     android.hardware.power.stats@1.0-service.mock
 
 PRODUCT_COPY_FILES += \
