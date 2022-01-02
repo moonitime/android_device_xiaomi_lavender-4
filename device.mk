@@ -145,7 +145,9 @@ PRODUCT_PACKAGES += \
 
 # ANT+
 PRODUCT_PACKAGES += \
-    AntHalService
+    AntHalService-Soong \
+    com.dsi.ant.antradio_library \
+		com.dsi.ant@1.0.vendor
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -217,6 +219,12 @@ PRODUCT_PACKAGES += \
     libqcomfm_jni \
     qcom.fmradio \
     qcom.fmradio.xml
+
+PRODUCT_BOOT_JARS += \
+    qcom.fmradio
+
+PRODUCT_PACKAGES += \
+    android.hardware.broadcastradio@1.0-impl
 
 # fwk-detect
 PRODUCT_PACKAGES += \
@@ -351,6 +359,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+# QTI common
+TARGET_COMMON_QTI_COMPONENTS := \
+    bt \
+    perf \
+    telephony \
+    vibrator
+
 # QTI Bluetooth
 -include vendor/qcom/opensource/commonsys-intf/bluetooth/bt-commonsys-intf-board.mk
 $(call inherit-product, vendor/qcom/opensource/commonsys-intf/bluetooth/bt-system-opensource-product.mk)
@@ -431,7 +446,7 @@ PRODUCT_PACKAGES += \
     telephony-ext
 
 PRODUCT_BOOT_JARS += \
-    telephony-ext
+    QXPerformance
 
 # Touchscreen
 PRODUCT_PACKAGES += \
