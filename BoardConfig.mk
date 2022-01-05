@@ -61,9 +61,6 @@ TARGET_KERNEL_CLANG_VERSION := r416183b1
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
-# Platform
-TARGET_BOARD_PLATFORM := sdm660
-
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
