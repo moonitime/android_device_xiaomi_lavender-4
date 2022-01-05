@@ -370,6 +370,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
+# Display prop to disable Idle time out
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.display.idle_time=32767
+
 #libProcess group
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
