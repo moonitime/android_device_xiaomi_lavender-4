@@ -401,7 +401,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0 \
     libprotobuf-cpp-full \
-    rild
+    rild \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml
 
 # AOT Preload
 PRODUCT_DEXPREOPT_SPEED_APPS += \
