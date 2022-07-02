@@ -10,9 +10,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Inherit some LineageOS stuff
-$(call inherit-product, vendor/kasumi/config/common_full_phone.mk) 
+$(call inherit-product, $(CUSTOM_VENDOR_DIR)/vendor/kasumi/config/common_full_phone.mk) 
 TARGET_BOOT_ANIMATION_RES := 1080
-KASUMI_BUILD_TYPE := gapps
 TARGET_GAPPS_ARCH := arm64
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
